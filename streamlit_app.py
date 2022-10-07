@@ -8,6 +8,7 @@ streamlit.text('Omega 3 & Blueberry Oatmeal')
 streamlit.text('Kale, Spinach & Rocket Smoothie  🥗 ')
 streamlit.text('Hard-Boiled Free-Range Egg 🐔')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+my_fruit_list = my_fruit_list.set_index('Fruit')
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
 
